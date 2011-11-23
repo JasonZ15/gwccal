@@ -66,8 +66,8 @@
 }
 
 .monthViewCell {
-	width: 100px;
-	height: 95px;
+	width: 30px;
+	height: 30px;
 	border: solid #83BC2B 1px;
 	text-align: left;
 }
@@ -79,6 +79,18 @@
 	color: gray;
 	font-family: "Verdana";
 	overflow: auto;
+}
+.contentCell .eventItem {
+	width: 0px;
+	height: 20px;
+	padding-left: 26px;
+	overflow: hidden;
+	background-color: red;
+	border-radius: 4px;
+ 	-webkit-border-radius: 4px;
+ 	-moz-border-radius: 4px;
+ 	-o-border-radius: 4px;
+ 	-khtml-border-radius: 4px;
 }
 
 .eventMouseOver {
@@ -120,8 +132,7 @@
 		google.gdata.client.init(calvis.handleError);
 
 		// Google Calendar IDs to Load. Modify this list to show others
-		var calIds = [ 'google@communitygreenguide.org',
-				'b0prga519c0g0t3crcnc0g9in0@group.calendar.google.com' ];
+		var calIds = [ 'gwc.event.cn@gmail.com' ];
 
 		// Start calvis rendering
 		loadCalendar(calIds);
