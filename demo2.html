@@ -15,23 +15,35 @@
 }
 
 #navControlDiv input {
-	background-color: #CEDD70;
-	border: solid #DDD270 1px;
+	background-color: #dadada;
+	border: solid #ccc 1px;
 	font-style: "Verdana";
 	font-size: 12px;
+	color: #fff;
+		border-radius: 4px;
+ 	-webkit-border-radius: 4px;
+ 	-moz-border-radius: 4px;
+ 	-o-border-radius: 4px;
+ 	-khtml-border-radius: 4px;
 }
 
 #navControlDiv select {
-	border: solid black 1px;
+	border: solid #ccc 1px;
 	font-style: "Verdana";
 	font-size: 12px;
 }
 
 #viewControlDiv input {
-	background-color: #CEDD70;
-	border: solid #DDD270 1px;
+	background-color: #dadada;
+	border: solid #ccc 1px;
 	font-style: "Verdana";
 	font-size: 12px;
+	color: #fff;
+		border-radius: 4px;
+ 	-webkit-border-radius: 4px;
+ 	-moz-border-radius: 4px;
+ 	-o-border-radius: 4px;
+ 	-khtml-border-radius: 4px;
 }
 
 #eventDisplayDiv {
@@ -54,8 +66,8 @@
 	text-align: center;
 	font-size: 12px;
 	color: gray;
-	background-color: #CEDD70;
-	border: solid #DDD270 1px;
+	background-color: #f7f7f7;
+	border: solid #eeeeee 1px;
 }
 
 .weekViewCell {
@@ -66,9 +78,9 @@
 }
 
 .monthViewCell {
-	width: 30px;
+	width: 34px;
 	height: 30px;
-	border: solid #83BC2B 1px;
+	border: solid #eeeeee 1px;
 	text-align: left;
 }
 
@@ -82,15 +94,17 @@
 }
 .contentCell .eventItem {
 	width: 0px;
-	height: 20px;
-	padding-left: 26px;
+	height: 14px;
+	padding-left: 30px;
 	overflow: hidden;
-	background-color: red;
+	background-color: #cc393d;
 	border-radius: 4px;
  	-webkit-border-radius: 4px;
  	-moz-border-radius: 4px;
  	-o-border-radius: 4px;
  	-khtml-border-radius: 4px;
+ 	cursor: pointer;
+ 	background: #cc393d url(event.png) no-repeat center 3px;
 }
 
 .eventMouseOver {
@@ -108,7 +122,7 @@
 <script type="text/javascript" src="Dialog.js"></script>
 <!-- Add Your Google API key here -->
 <script
-	src="http://www.google.com/jsapi?key=ABQIAAAAedBkXrK2yFsT6zhhwlSsCxQj9CErMmZjqOWZLXZytuBjMmwYpRRqRkUZAWLlaIaz_YNa5NTsC2PzhQ"
+	src="http://www.google.com/jsapi?key=ABQIAAAA4MirVMPYFD5G1OHAAuIemBROjHCgX31INkmLN3UDbyAtORyDZBRcyV8QynMalfLDsVCMc2VaZsgeHA"
 	type="text/javascript"></script>
 <script type="text/javascript">
 	//<![CDATA[
@@ -196,7 +210,7 @@
 		eventHtml.push('<table>');
 		eventHtml.push('<tr>');
 		eventHtml.push('<td>');
-		eventHtml.push('<div style="border: 1px solid #CEDD70; width: 300px; height: 300px" id="map"/>');
+		eventHtml.push('<div style="border: 1px solid #ccc; width: 300px; height: 300px" id="map"/>');
 		eventHtml.push('</td>');
 		eventHtml.push('<td>');
 		eventHtml.push('<div id="video"></div>');
@@ -308,8 +322,7 @@
 <table>
 
 	<tr style="text-align: center;" align="left">
-		<td valign="top"><span style="float: left;" id="navControlDiv"></span>
-		<span style="float: right;" id="viewControlDiv"></span></td>
+		<td valign="top"><span style="float: left;" id="navControlDiv"></span></td>
 	</tr>
 
 	<tr align="center">
@@ -319,6 +332,6 @@
 	</tr>
 </table>
 
-* Click on events to show details *</div>
+点击 EVENT 查看更多活动信息</div>
 </body>
 </html>

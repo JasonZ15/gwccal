@@ -208,7 +208,7 @@ Widget.Dialog.prototype = {
     dwindow.style.width = width+'px';
     dwindow.style.position = 'absolute';
     dwindow.style.background = '#fff';
-    dwindow.style.border = '2px solid #CEDD70';
+    dwindow.style.border = '2px solid #cc393d';
     dwindow.style.padding = '6px';
     dwindow.style.textAlign = 'left';
     return dwindow;
