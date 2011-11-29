@@ -28,7 +28,7 @@ Widget.Dialog.close = function(msg, options) {
 Widget.Dialog.prototype = {
   _options: {
     'height'      : 300,
-    'width'       : 600,
+    'width'       : 282,
     'labelOk'     : 'Close',
     'labelCancel' : 'Cancel',
     'onOk'        : function() {
@@ -53,7 +53,7 @@ Widget.Dialog.prototype = {
     dmsg.innerHTML = msg;
 
     var div = document.createElement('div');
-    div.align = 'right';
+    div.className += " close";
 
     var closeImage = document.createElement('img');
     closeImage.src = 'close.gif';
@@ -185,7 +185,7 @@ Widget.Dialog.prototype = {
       background = '#000';
     }
 
-    this._setOpacity(doverlay, 0.5);
+    this._setOpacity(doverlay, 0.0);
     var pageSize = this._getPageSize();
     doverlay.style.height = pageSize.pageHeight+'px';
     doverlay.style.width = '100%';
@@ -202,13 +202,13 @@ Widget.Dialog.prototype = {
     dwindow.id = 'dwindow';
     var pageSize = this._getPageSize();
     var pos = this._realOffset(document.body);
-    dwindow.style.top = (pageSize.windowHeight/4 - height/4 + pos[1])+'px';
-    dwindow.style.left = (pageSize.windowWidth/2 - width/2 + pos[0])+'px';
+    dwindow.style.top = '0px';
+    dwindow.style.left = '0px';
     //dwindow.style.height = height+'px';
     dwindow.style.width = width+'px';
     dwindow.style.position = 'absolute';
     dwindow.style.background = '#fff';
-    dwindow.style.border = '2px solid #cc393d';
+    dwindow.style.border = '1px solid #ccc';
     dwindow.style.padding = '6px';
     dwindow.style.textAlign = 'left';
     return dwindow;

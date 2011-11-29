@@ -118,6 +118,9 @@
 	color: gray;
 	background-color: white;
 }
+
+#dmsg {font: normal 12px Arial;}
+.close {float:right;}
 </style>
 
 <script type="text/javascript" src="calvis-core.js"></script>
@@ -192,27 +195,23 @@
 		var location_ = event.getLocations()[0].getValueString().split('@')[0];
 
 		var eventHtml = [];
-		eventHtml.push('<b>Title: </b>');
+		eventHtml.push('<b>');
 		eventHtml.push(title);
+		eventHtml.push('</b>');
 		eventHtml.push('<br>');
-		eventHtml.push('<br>');
-		eventHtml.push('<b>When </b>');
+		
 		eventHtml.push(date.toString());
 		eventHtml.push('<br>');
-		eventHtml.push('<br>');
-		eventHtml.push('<b>Description:</b>');
-		eventHtml.push('<p style="font-size: 12px;">');
 		eventHtml.push(content);
-		eventHtml.push('</p>');
 
-		eventHtml.push('<b>Where: </b>');
+		eventHtml.push('&nbsp;');
 		eventHtml.push(location_);
-		eventHtml.push('<br><br>');
+		eventHtml.push('<br>');
 		eventHtml.push('<div align="center">');
 		eventHtml.push('<table>');
 		eventHtml.push('<tr>');
 		eventHtml.push('<td>');
-		eventHtml.push('<div style="border: 1px solid #ccc; width: 300px; height: 300px" id="map"/>');
+		eventHtml.push('<div style="border: 1px solid #ccc; width: 270px; height: 270px" id="map"/>');
 		eventHtml.push('</td>');
 		eventHtml.push('<td>');
 		eventHtml.push('<div id="video"></div>');
@@ -317,7 +316,7 @@
 <div style="position: absolute; top: 0px; right: 5px;"
 	id="loginControlDiv"></div>
 
-<div align="center">
+<div>
 
 <table>
 
